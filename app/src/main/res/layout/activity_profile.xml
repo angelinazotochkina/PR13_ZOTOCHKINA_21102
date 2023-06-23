@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="#253334">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="46dp"
+        android:layout_height="47dp"
+        app:srcCompat="@drawable/burger"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
+        android:text="exit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="284dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bmain"
+        android:layout_width="414dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="12dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/bexit"
+        android:layout_width="89dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="247dp"
+        android:layout_marginBottom="68dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingPrefix">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="15sp"
+                app:srcCompat="@drawable/moon"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="153dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/sun"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="161dp"
+                android:layout_height="102dp"
+                android:layout_marginRight="15sp"
+                app:srcCompat="@drawable/people"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="156dp"
+                android:layout_height="106dp"
+                android:backgroundTint="?attr/colorSecondaryVariant"
+                android:text="+"
+                android:textSize="40sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="311dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="3dp">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="151dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            app:srcCompat="@drawable/logo1" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            app:srcCompat="@drawable/profile_pic"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:text="Ангелина"
+            android:textColor="#FDFBFB"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
